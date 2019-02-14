@@ -1,17 +1,11 @@
 <template>
   <div id="sideNavigation">
-    <el-menu class="side-nav-menu">
-      <el-menu-item index="2">
-        <i class="el-icon-menu"></i>
-        <span>Navigator Two</span>
+    <el-menu class="side-nav-menu" :router="true" :default-active="activeLink">
+      <el-menu-item index="/dashboard">
+        <span>Dashboard</span>
       </el-menu-item>
-      <el-menu-item index="3" disabled>
-        <i class="el-icon-document"></i>
-        <span>Navigator Three</span>
-      </el-menu-item>
-      <el-menu-item index="4">
-        <i class="el-icon-setting"></i>
-        <span>Navigator Four</span>
+      <el-menu-item index="/list">
+        <span>List</span>
       </el-menu-item>
     </el-menu>
   </div>
